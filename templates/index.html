@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Ask-A-QuesBot</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='chatcs.css')}}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+<a href="{{ url_for('how')}}">How It Works</a>
+<a href="{{ url_for('timel')}}">TimeLine</a>
+<form method="post" action="/talk" class="search-bar">
+	<input type="search" name="passage"  pattern=".*\S.*" placeholder="Enter a paragraph" required id="magnify">
+	<button id="text_span" class="search-btn" type="submit">
+		<span>Search</span>
+	</button>
+</form>
+</body>
+</html>
+
