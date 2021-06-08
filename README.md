@@ -24,11 +24,9 @@ We are trying to get the application to run concurrently so that multiple users 
 
 ## How to run it on your PC
 Note: As of now, we have only tested it on Linux. Other operating systems may not be supported
-<ol>
-<li>Clone the repo</li>
-<li>Activate your virtual environment (if you are using one) and run pip install -r req.txt</li>
-<li>Install PostgreSQL, create a database and a user and add the appropriate credentials in `main.py` on line 27</li>
-<li>Run `python main.py` and wait for the server to start. First start may take longer as the language model needs to be downloaded.</li>
-<li>Navigate to `localhost:5000` in your browser and start using the application!</li>
-<li>If you want to reload the earlier entered text, copy the SHA-256 hash which is shown on the chat screen when you submit the text. Then navigate to `localhost:5000/passage/{hash}`
-</ol>
+1. Clone the repo
+2. Activate your virtual environment (if you are using one) and run pip install -r req.txt
+3. Install PostgreSQL, create a database and a user and add the appropriate credentials in `main.py` on line 27
+4. Run `python main.py` and wait for the server to start. First start may take longer as the language model needs to be downloaded.
+5. Navigate to `localhost:5000` in your browser and start using the application!
+6. If you want to reload the earlier entered text, copy the SHA-256 hash which is shown on the chat screen when you submit the text. Then navigate to `localhost:5000/passage/{hash}`
